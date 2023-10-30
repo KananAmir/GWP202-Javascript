@@ -93,3 +93,9 @@ console.log("test: ", testVariable);
 var testVariable = "lorem ipsum dolor";
 
 // console.log("salam");
+
+let bool = false;
+console.log(typeof bool);
+
+console.log(subject);
+subject = "maths";
