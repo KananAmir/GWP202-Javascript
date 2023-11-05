@@ -1,0 +1,13 @@
+
+let arr=[3,8,2,5,4,10,7,6]
+
+# Verilmiş array-in tək elementlərinin indeksini çapa verən proqram tərtib edin.
+
+# Verilmiş array-in tək indeksli elementlərini çapa verən proqram tərtib edin.
+
+# Verilmiş array-in cüt elementlərinin max elementini çapa verən proqram tərtib edin.
+
+let num = 10;
+
+# Verilmiş ədədin array-də olub olmadığını təyin edən proqram tərtib edin.
+

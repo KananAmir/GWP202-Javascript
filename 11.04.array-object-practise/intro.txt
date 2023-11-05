@@ -1,0 +1,19 @@
+1. boş array yaradın
+
+let arr = new Array()
+
+2. itCompanies adında və elementlər Facebook, Google, Microsoft, Apple, IBM, Oracle və Amazon olan array yaradın
+
+let itCompanies = ["Facebook", "Google"]
+
+3. yaratdığınız arrayın length'ni tapın
+
+4. console.log() istifadə edərək array elementlərini çap edin
+
+5. arrayın ilk elementini, orta elementini və sonuncu elementini çap edin
+
+6. arrayin hər bir elementini böyük hərflərə çevirin (toLocaleUpperCase()) və yeni bir arraydə toplayın
+
+7. arrayi bir cümlə kimi çap edin.
+
+ex: Facebook, Google, Microsoft, Apple, IBM, Oracle , Amazon böyük İT şirkətləridir.
