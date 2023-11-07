@@ -1,0 +1,25 @@
+
+length - property
+push
+pop
+unshift
+shift
+at
+concat
+
+slice
+splice
+indexOf
+lastIndexOf
+
+includes
+join
+
+forEach
+map
+findIndex
+find
+filter
+
+
+every, some, sort, reduce, fill, from, flat, flatMap
