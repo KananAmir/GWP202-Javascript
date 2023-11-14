@@ -1,0 +1,20 @@
+length
+charAt
+charCodeAt
+uppercase/lovercase
+indexOf (position)
+lastIndexOf
+startsWith
+endsWith
+
+trim (end, start)
+substring
+slice (negative)
+padStart/padEnd
+includes
+
+split
+replace
+replaceAll
+concat
+match

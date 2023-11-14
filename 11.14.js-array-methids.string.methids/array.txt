@@ -1,0 +1,2 @@
+every, some, sort, reduce, fill, from, flat, flatMap
+
