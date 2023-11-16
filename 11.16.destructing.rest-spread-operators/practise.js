@@ -183,8 +183,42 @@ let employees = [
 
 // Find the employee who has many skills in the employees object.
 
+// I
+// console.log(employees.sort((a, b) => b.skills.length - a.skills.length)[0]);
+
+// II
+
+// console.log(
+//   employees.reduce((acc, curr) =>
+//     curr.skills.length > acc.skills.length ? curr : acc
+//   )
+// );
+
+// III
+let maxSkills = employees[0];
+employees.forEach((item) => {
+  if (item.skills.length > maxSkills.skills.length) {
+    maxSkills = item;
+  }
+});
+
+console.log(maxSkills);
 // isLoggedIn true olanları array şəklində return edin
 
 // age'ə görə sort edin
 
 // Random 1 den 10 a qeder reqem generate edin ve sonra arrayda hemin reqemin olub olmamasini yoxlayin
+
+let numArr = [2, 6, 3, 9, 7];
+
+function checkRandomNumberInArray(array) {
+  let randomNumber = Math.floor(Math.random() * 10);
+
+  if (array.includes(randomNumber)) {
+    return `${randomNumber} number includes in [${array}]`;
+  } else {
+    return `${randomNumber} number does not includes in [${array}]`;
+  }
+}
+
+console.log(checkRandomNumberInArray(numArr));
