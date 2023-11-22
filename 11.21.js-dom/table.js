@@ -232,17 +232,46 @@ const users = [
 ];
 
 let tBody = document.querySelector("tbody");
+let search = document.querySelector("#search");
 
-users.forEach((element) => {
-  let trElement = document.createElement("tr");
+function drawTable(data) {
+  tBody.innerHTML = "";
+  data.forEach((element) => {
+    let trElement = document.createElement("tr");
 
-  trElement.innerHTML = `
-                        <td>${element.id}</td>
-                        <td>${element.username}</td>
-                        <td>${element.address.city}</td>
-                        <td>${element.phone}</td>
-                        <td>${element.company.name}</td>
-                        <td>${element.website}</td>
-                                 `;
-  tBody.append(trElement);
+    trElement.innerHTML = `
+                          <td>${element.id}</td>
+                          <td>${element.username}</td>
+                          <td>${element.address.city}</td>
+                          <td>${element.phone}</td>
+                          <td>${element.company.name}</td>
+                          <td>${element.website}</td>
+                                   `;
+    tBody.append(trElement);
+  });
+}
+
+drawTable(users);
+
+
+
+
+
+
+
+
+
+
+
+search.addEventListener("keyup", function (event) {
+  // console.log(event.target);
+  // console.log(event.target.value);
+
+  let filtered = users.filter((item) =>
+    item.username.toLocaleLowerCase().includes(event.target.value)
+  );
+
+  // console.log(filtered);
+
+  drawTable(filtered);
 });
