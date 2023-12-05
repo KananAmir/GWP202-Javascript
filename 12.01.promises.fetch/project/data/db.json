@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 278,
+      "title": "Clothes",
+      "price": 10,
+      "description": "A description",
+      "images": [
+        "https://placeimg.com/640/480/any"
+      ],
+      "category": {
+        "id": 1,
+        "name": "Clothes",
+        "image": "https://i.imgur.com/QkIa5tT.jpeg"
+      }
+    },
+    {
+      "id": 300,
+      "title": "Clothes",
+      "price": 10,
+      "description": "A description",
+      "images": [
+        "https://placeimg.com/640/480/any"
+      ],
+      "category": {
+        "id": 1,
+        "name": "Clothes",
+        "image": "https://i.imgur.com/QkIa5tT.jpeg"
+      }
+    },
+    {
+      "title": "GWP",
+      "price": 1230,
+      "description": "A description",
+      "images": [
+        "https://placeimg.com/640/480/any"
+      ],
+      "category": {
+        "id": 5,
+        "name": "Clothes",
+        "image": "https://i.imgur.com/QkIa5tT.jpeg"
+      },
+      "id": 301
+    }
+  ]
+}
