@@ -41,19 +41,19 @@ function drawCards(array) {
   });
 }
 
-// function deleteCustomer(id) {
-//   fetch(`${BASE_URL}/customers/${id}`, {
-//     method: "DELETE",
-//   }).then(() => {
-//     fetch(`${BASE_URL}/customers`)
-//       .then((response) => response.json())
-//       .then((data) => {
-//         // console.log(data);
-//         drawCards(data);
-//       })
-//       .catch((err) => console.log(err));
-//   });
-// }
+function deleteCustomer(id) {
+  fetch(`${BASE_URL}/customers/${id}`, {
+    method: "DELETE",
+  }).then(() => {
+    fetch(`${BASE_URL}/customers`)
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data);
+        drawCards(data);
+      })
+      .catch((err) => console.log(err));
+  });
+}
 
 function deleteCustomer(id, btn) {
   if (confirm("Are u sure to delete customer??")) {
