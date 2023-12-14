@@ -58,10 +58,41 @@ form.addEventListener("submit", function (event) {
 });
 
 async function addSupplier(obj) {
-  await axios.post(`${BASE_URL}/suppliers`, obj);
-  window.location = "suppliers.html";
+  try {
+    let response = await axios.post(`${BASE_URL}/suppliers`, obj);
+    if (response.status === 201) {
+      Toastify({
+        text: "Added Successfully!!",
+        className: "info",
+        close: true,
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+      }).showToast();
+      // window.location = "suppliers.html";
+    }
+  } catch (error) {
+    console.log(error);
+  }
 }
 async function updateSupplier(obj) {
-  await axios.patch(`${BASE_URL}/suppliers/${id}`, obj);
-  window.location = "suppliers.html";
+  try {
+    let response = await axios.patch(`${BASE_URL}/suppliers/${id}`, obj);
+    console.log(response);
+    if (response.status === 200) {
+      Toastify({
+        text: "Updated Successfully!!",
+        className: "info",
+        close: true,
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+      }).showToast();
+    }
+    // window.location = "suppliers.html";
+  } catch (error) {
+    console.log(error);
+  }
 }

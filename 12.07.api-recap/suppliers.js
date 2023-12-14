@@ -46,10 +46,36 @@ function drawTable(data) {
 }
 
 async function deleteSupplier(id, btn) {
-  if (confirm("are u sure to delete supplier??")) {
-    btn.closest("tr").remove();
-    await axios.delete(`${BASE_URL}/suppliers/${id}`);
-    //   await getData("suppliers");
+  try {
+    if (confirm("are u sure to delete supplier??")) {
+      let response = await axios.delete(`${BASE_URL}/suppliers/${id}`);
+      console.log(response);
+
+      if (response.status === 200) {
+        btn.closest("tr").remove();
+        Toastify({
+          text: "Deleted Successfully!!",
+          className: "info",
+          close: true,
+          stopOnFocus: true,
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast();
+      }
+      //   await getData("suppliers");
+    }
+  } catch (error) {
+    console.log(error);
+    Toastify({
+      text: "No such Suppliers",
+      className: "info",
+      close: true,
+      stopOnFocus: true,
+      style: {
+        background: "linear-gradient(to right, red, yellow)",
+      },
+    }).showToast();
   }
 }
 
