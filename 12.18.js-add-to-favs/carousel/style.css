@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+ scroll-behavior: smooth;
+}
+#banner {
+  background-image: url("./images/background9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+.banner .carousel-inner .carousel-item-conatiner {
+  display: flex;
+}
+.banner .carousel-inner .carousel-item-left,
+.banner .carousel-inner .carousel-item-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem;
+}
+.banner .carousel-inner .carousel-item-right img {
+  width: 100%;
+}
+.banner .carousel-inner .carousel-item-left button {
+  padding: 0.6rem 2.8rem;
+  background-color: transparent;
+  border: 2px solid #ff2b09;
+  text-transform: uppercase;
+  transition: all 600ms;
+  position: relative;
+  z-index: 9999;
+}
+.banner .carousel-inner .carousel-item-left h5 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.banner .carousel-inner .carousel-item-left p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.banner .carousel-inner .carousel-item-left button:hover {
+  background-color: #ff2b09;
+  color: white;
+}
+
+.accordion-button::after {
+  background-image: url("./images/arrow-down-sign-to-navigate.png") !important;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  border: unset !important;
+  box-shadow: none !important;
+}
