@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Esprit Ruffle Shirt",
+      "price": 16.64,
+      "imgUrl": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "Only Check Trouser",
+      "price": 16.64,
+      "imgUrl": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg"
+    },
+    {
+      "id": 4,
+      "productName": "Classic Trench Coat",
+      "price": 16.64,
+      "imgUrl": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg"
+    },
+    {
+      "productName": "Dignissimos eiusmod ",
+      "price": "87",
+      "imgUrl": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
+      "id": 5
+    },
+    {
+      "productName": "Aut iste saepe conse",
+      "price": "29",
+      "imgUrl": "Laboriosam sed et h",
+      "id": 6
+    },
+    {
+      "productName": "Iusto sunt totam qu",
+      "price": "46",
+      "imgUrl": "Quam sit quos dolor ",
+      "id": 7
+    },
+    {
+      "productName": "Amet nobis tempore",
+      "price": "61",
+      "imgUrl": "Ab quia sit et in am",
+      "id": 8
+    }
+  ]
+}
