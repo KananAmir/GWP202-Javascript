@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+
+#menu-carousel .swiper .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
