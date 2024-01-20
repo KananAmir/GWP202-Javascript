@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+@media only screen and (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header .header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+header .header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#menus {
+  padding: 8rem 0;
+}
+#menus .menu .menu-btns {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+#menus .menu .menu-btns .menu-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+#menus .menu .menu-btns .menu-btn.active {
+  color: orange;
+}
+#menus .menu .all-menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+#menus .menu .all-menus .menu-item {
+  width: 45%;
+}
+#menus .menu .all-menus .menu-item p {
+  text-align: justify;
+}
+#menus .menu .all-menus .menu-item .menu-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-table .menu-table table {
+  border: 1px solid;
+}
+#menu-table .menu-table table th {
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+}
+#menu-table .menu-table table td {
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+}/*# sourceMappingURL=main.css.map */

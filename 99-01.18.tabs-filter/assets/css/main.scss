@@ -1,0 +1,70 @@
+@import "./global";
+
+header {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    nav {
+      ul {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
+}
+#menus {
+  padding: 8rem 0;
+  .menu {
+    .menu-btns {
+      display: flex;
+      justify-content: center;
+      padding: 3rem 0;
+      gap: 2rem;
+      .menu-btn {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        &.active {
+          color: orange;
+        }
+      }
+    }
+
+    .all-menus {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      .menu-item {
+        width: 45%;
+        p {
+          text-align: justify;
+        }
+        .menu-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+#menu-table {
+  .menu-table {
+    table {
+      border: 1px solid;
+      th {
+        border: 1px solid;
+        padding: 0.5rem 1rem;
+      }
+      td {
+        border: 1px solid;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "menus": [
+    {
+      "id": "1",
+      "title": "menu 1",
+      "price": 324,
+      "desc": "with wild mushrooms and asparagus",
+      "category": "breakfast"
+    },
+    {
+      "id": "2",
+      "title": "menu 2",
+      "price": 78,
+      "desc": "with wild mushrooms and asparagus, with wild mushrooms",
+      "category": "brunch"
+    },
+    {
+      "id": "3",
+      "title": "menu 3",
+      "price": 956,
+      "desc": "with wild and asparagus",
+      "category": "lunch"
+    },
+    {
+      "id": "4",
+      "title": "menu 4",
+      "price": 22,
+      "desc": "with wild mushrooms and asparagus lorem ipsum",
+      "category": "dinner"
+    },
+    {
+      "id": "43",
+      "title": "menu 5",
+      "price": 99,
+      "desc": "with wild mushrooms and asparagus lorem ipsum",
+      "category": "dinner"
+    },
+    {
+      "id": "5",
+      "title": "menu 5",
+      "price": 239,
+      "desc": "with wild mushrooms and asparagus",
+      "category": "breakfast"
+    },
+    {
+      "id": "6",
+      "title": "menu 6",
+      "price": 578,
+      "desc": "with wild and asparagus",
+      "category": "lunch"
+    }
+  ]
+}
